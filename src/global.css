@@ -1,0 +1,244 @@
+/* Herosection css */
+
+.hero-section {
+    position: relative;
+    overflow: hidden;
+    background-image: url('./assets/herosection.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.gradient-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#31363fc2, #31363f5b);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    color: white;
+    padding-top: 120px;
+    padding-left: 203px;
+}
+
+.hero-content h4 {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.hero-content h1 {
+    font-size: 5.5rem;
+}
+
+.button-container {
+    display: flex;
+    gap: 15px;
+    margin-top: 40px;
+}
+
+
+.button-container button:nth-child(1) {
+    padding: 10px 40px;
+    background-color: #DC6B19;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.button-container button:nth-child(1):hover {
+    background-color: #9B3922;
+    transition: .3s ease-in-out;
+
+}
+
+.button-container button:nth-child(2) {
+    padding: 10px 40px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+
+}
+
+.button-container button:nth-child(2):hover {
+    background-color: black;
+    border: 1px solid transparent;
+    transition: .3s ease-in-out;
+
+}
+
+
+
+@media screen and (max-width : 700px) {
+    .hero-content {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* justify-content: center; */
+        width: 100%;
+        z-index: 1;
+        color: white;
+        /* border: 1px solid red; */
+        /* padding-top: 120px; */
+        padding-left: 0;
+    }
+
+    .hero-content h4 {
+        /* text-align: center; */
+    }
+
+    .hero-content h1 {
+        padding: 12px;
+        margin-top: 0;
+        /* text-align: center; */
+        font-size: 2rem;
+    }
+
+    .button-container {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 40px;
+    }
+}
+
+
+/* footer css */
+
+.footer {
+    margin-top: 200px;
+    width: 100%;
+    background: #10182F;
+    border-radius: 6px;
+}
+
+.footer .footer-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 3.5rem;
+    padding: 60px;
+}
+
+.footer-row .footer-col h4 {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.footer-col .links {
+    margin-top: 20px;
+}
+
+.footer-col .links li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.footer-col .links li a {
+    text-decoration: none;
+    color: #bfbfbf;
+}
+
+.footer-col .links li a:hover {
+    color: #fff;
+}
+
+.footer-col p {
+    margin: 20px 0;
+    color: #bfbfbf;
+    max-width: 300px;
+}
+
+.footer-col form {
+    display: flex;
+    gap: 5px;
+}
+
+.footer-col input {
+    height: 40px;
+    border-radius: 6px;
+    background: none;
+    width: 100%;
+    outline: none;
+    border: 1px solid #7489C6;
+    caret-color: #fff;
+    color: #fff;
+    padding-left: 10px;
+}
+
+.footer-col input::placeholder {
+    color: #ccc;
+}
+
+.footer-col form button {
+    background: #fff;
+    outline: none;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.2s ease;
+}
+
+.footer-col form button:hover {
+    background: #cecccc;
+}
+
+.footer-col .icons {
+    display: flex;
+    margin-top: 30px;
+    gap: 30px;
+    cursor: pointer;
+}
+
+.footer-col .icons i {
+    color: #afb6c7;
+}
+
+.footer-col .icons i:hover {
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        position: relative;
+        bottom: 0;
+        left: 0;
+        transform: none;
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .footer .footer-row {
+        padding: 20px;
+        gap: 1rem;
+    }
+
+    .footer-col form {
+        display: block;
+    }
+
+    .footer-col form :where(input, button) {
+        width: 100%;
+    }
+
+    .footer-col form button {
+        margin: 10px 0 0 0;
+    }
+}
